@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script type="text/javascript">
+        
+var ymPluginDivContainerInitial = document.createElement('DIV');
+ymPluginDivContainerInitial.setAttribute("id", "ymLoader");
+ymPluginDivContainerInitial.innerHTML = '<div id="ymLoaderCircle" style="right: 20px;width: 80px;height: 80px;border-radius: 50%;box-shadow: 1px 1px 10px #999!important;cursor: pointer; bottom: 20px;background-size: 40px;position: fixed;z-index:99999"><img style="width: 80px;height: 80px;background: #ee1c25;border-radius: 50%; z-index:0;" src="https://cdn.yellowmessenger.com/XukasdZLBx521551148060140.png"/></div>';
+document.getElementsByTagName('body')[0].appendChild(ymPluginDivContainerInitial);
+document.getElementById('ymLoaderCircle').addEventListener("click", function () {
+setTimeout(function () { document.getElementById('ymLoader').remove(); }, 8000);
+(function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", window.ymConfig || {}); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://chat.botplatform.io/plugin-v2.js?bot=bot_1513757931671&init=true&open=true"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, l(); } })();
+}); 
+
+    </script>
+</body>
+</html>
